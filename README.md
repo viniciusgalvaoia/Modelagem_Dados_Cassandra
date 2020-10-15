@@ -20,7 +20,7 @@ Utilizando os conjuntos de dados event_datafile.csv, foi criada uma base de dado
 
 O ETL pipeline extrai os dados dos arquivos CSV contidos no diretório event_data, que estão particionados pela data, e com isso é criado o arquivo `event_datafile.csv`. Em seguida é feita a inserção nas tabelas do Cassandra utilizando o script `etl.py`, como você pode observar na imagem abaixo
 
-![Pipeline ETL](images/Pipeline_ETL.png)
+![Pipeline ETL](images/Pipeline_ETL_Cassandra.png)
 
 ## Como executar
 
