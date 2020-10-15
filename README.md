@@ -4,7 +4,7 @@
 
 Esse é um projeto para praticar modelagem de dados com Cassandra e desenvolvimento de dashboards com Metabase.
 
-Esse projeto ajuda o time de analytics de uma startup chamada Sparkify analisando seus dados de músicas e as atividades de usuários.
+Esse projeto ajuda o time de analytics de uma startup de streaming de música, chamada Sparkify, analisando seus dados de músicas e as atividades de usuários.
 
 Os dado contidos em um diretório com arquivos CSV particionados por data são transferidos para uma base de dados para análises futuras. 
 
@@ -53,10 +53,10 @@ Se você deseja executar esse projeto em sua máquina, você deve finalizar os s
     - `create` database `sparkifydb`
     - `drop` tables if exists
     - `create` tables if not exists
+- **pre_process.py**
+  - Quando executado, esse script irá iterar entre todos arquivos dentro do diretório `event_datafile` para extrair os dados de eventos do app e criar um arquivo CSV com todos eventos unificados
 - **etl.py**
-  - Script para implementaçao do processo de ETL
-  - Quando executado, esse script irá 
-    - Iterar entre todos arquivos dentro do diretório `event_datafile` para extrair os dados de eventos do app e inserir na base de dados do Cassandra
+  - Quando executado, esse script irá extrair os dados do arquivo `event_datafile` e popular as tabelas `song_event`, `user_activity` e `session_activity` na base de dados do Cassandra
 - **README.md**
   - Descrição e instruções sobre o projeto
 - **sql_queries.py**
