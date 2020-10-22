@@ -2,7 +2,7 @@
 
 ## Introdução
 
-Esse é um projeto para praticar modelagem de dados com Cassandra e desenvolvimento de dashboards com Metabase.
+Esse é um projeto para praticar modelagem de dados com Cassandra.
 
 Esse projeto ajuda o time de analytics de uma startup de streaming de música, chamada Sparkify, analisando seus dados de músicas e as atividades de usuários.
 
@@ -28,10 +28,7 @@ O ETL pipeline extrai os dados dos arquivos CSV contidos no diretório event_dat
 
 Se você deseja executar esse projeto em sua máquina, você deve finalizar os seguintes passos primeiro.
 
-- Instalar `Cassandra` em localhost
-- Criar usuário `cassandra` com senha `admin`
-- Criar base de dados `sparkifydb`
-- Instalar `Metabase`
+- Instalar `Cassandra`
 
 ### Instruções
 
@@ -63,5 +60,3 @@ Se você deseja executar esse projeto em sua máquina, você deve finalizar os s
   - Contém todas instruções DLL definidas
 - **test.sql**
   - Queries para testar se as tabelas foram populadas corretamente
-- **arquivo do metabase**
-  - Dashboard com as análises realizadas
