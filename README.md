@@ -29,6 +29,7 @@ O ETL pipeline extrai os dados dos arquivos CSV contidos no diretório event_dat
 Se você deseja executar esse projeto em sua máquina, você deve finalizar os seguintes passos primeiro.
 
 - Instalar `Cassandra`
+- Instalar `Python`
 
 ### Instruções
 
